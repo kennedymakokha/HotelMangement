@@ -13,4 +13,16 @@ export interface IOrder {
     food: string,
     id: number
 }
+export interface ITableData {
+    name: string,
+    capacity: number,
+   
+}
+export interface IEmployee {
+    name: string,
+    role: string,
+    phone_number:string,
+    email:string
+   
+}
 

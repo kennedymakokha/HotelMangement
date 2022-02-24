@@ -1,10 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit'
+import employeeReducer from '../features/employeeSlice'
 import reservationReducer from '../features/reservationSlice'
 import reserveManagementReducer from '../features/reserveManagementSlice'
+import tableReducer from '../features/tableSlice'
 export const store = configureStore({
     reducer: {
         resrvations: reservationReducer,
-        customers: reserveManagementReducer
+        customers: reserveManagementReducer,
+        tables: tableReducer,
+        employees: employeeReducer
+
     }
 })
 
